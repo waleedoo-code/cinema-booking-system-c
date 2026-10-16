@@ -1,42 +1,73 @@
-Cinema and Event Booking System in C
+# Cinema and Event Booking System in C
 
-A university programming project featuring a menu-driven terminal interface for managing seat reservations.
+A university programming project demonstrating **C programming**, **file handling** and **input validation** through a terminal-based booking application.
 
-Features
+## Features
 
-View events and available seats
+- View available events and seat counts
+- Reserve a specific seat
+- Prevent duplicate reservations for the same seat
+- Validate event IDs, numeric inputs and seat numbers
+- Cancel reservations using booking details and a numeric password
+- Display a report of current bookings
 
-Book a specific seat
+## Project Files
 
-Check event IDs, numeric inputs and seat availability
+| File | Purpose |
+|---|---|
+| `main.c` | Application source code |
+| `events.txt` | Sample event names and seat information |
 
-Prevent duplicate reservations for the same seat
+## Event Data Format
 
-Cancel a reservation using booking details and a numeric password
+Each line in `events.txt` contains:
 
-Display current bookings
+```text
+Event ID,Event Name,Total Seats,Available Seats
+```
 
-Files
+Example data — do not include a header row in the file:
 
-main.c — application source code
+```text
+101,Example Movie A,50,50
+102,Example Movie B,40,40
+103,Example Movie C,30,30
+```
 
-events.txt — sample event data
+## How to Run
 
-Each line in events.txt contains:
-Event ID, Event Name, Total Seats, Available Seats
+Download both files into the same folder. Open a terminal in that folder.
 
-How to run
+### Compile with GCC
 
-Download both files into the same folder.
-
-Compile main.c using a C compiler. Run the application with that folder as its working directory so it can find events.txt.
-
-Example using GCC:
-
+```bash
 gcc main.c -o booking
+```
 
-Run ./booking on Linux/macOS, or .\booking.exe in Windows PowerShell.
+### Run on Windows PowerShell
 
-Limitations
+```powershell
+.\booking.exe
+```
 
-Bookings are stored in memory and are cleared when the application closes. The application supports up to 10 booking records at a time.
+### Run on Linux or macOS
+
+```bash
+./booking
+```
+
+The program reads `events.txt` from its working directory.
+
+## Programming Concepts
+
+- Structures and arrays
+- Functions and modular programming
+- Loops and conditional logic
+- Text-file input
+- Input validation
+- Booking and seat-availability management
+
+## Current Limitations
+
+- Reservations are stored in memory and cleared when the application closes.
+- A maximum of 10 booking records can be stored at one time.
