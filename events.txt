@@ -1,0 +1,15 @@
+1,Avatar: The Way of Water,100,100
+2,Spider-Man: No Way Home,120,120
+3,The Batman,80,80
+4,Top Gun: Maverick,90,90
+5,Doctor Strange in the Multiverse,70,70
+6,Thor: Love and Thunder,85,85
+7,Black Panther: Wakanda Forever,100,100
+8,The Super Mario Bros. Movie,60,60
+9,Jurassic World Dominion,75,75
+10,Minions: The Rise of Gru,50,50
+11,Dune: Part Two,100,100
+12,1984,40,40
+13,Dead Poets Society,30,30
+14,Fight Club,50,50
+15,John Wick: Chapter 4,90,90
